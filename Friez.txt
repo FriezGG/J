@@ -599,12 +599,12 @@ redzlib.Themes.DarkRed = {
 }  
 
 local Window = redzlib:MakeWindow({
-    Title = "Friez Hub  | " .. gameName,
-    SubTitle = "By Friez",
-    SaveFolder = "Friez Hub"
+    Title = "Light Hub  | " .. gameName,
+    SubTitle = "By FriezGG",
+    SaveFolder = "Light Hub"
 })
 
-redzlib:SetTheme("DarkRed")
+redzlib:SetTheme("DarkBlue")
 
 local Tab1 = Window:MakeTab({"| Home", "rbxassetid://17781992617"})
 local Tab2 = Window:MakeTab({"| Player", "rbxassetid://18170270692"})
