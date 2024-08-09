@@ -502,8 +502,8 @@ local executorName = getExecutorName()
 
 if executorName == "Solara" then
     local Notify = Library:MakeNotify({
-        Title = "Friez Hub ",
-        Text = "Friez Hub  has determined that your executor, " .. executorName .. ", is fully compatible, ensuring an optimal and satisfying experience with our product.",
+        Title = "Light Hub ",
+        Text = "Light Hub  has determined that your executor, " .. executorName .. ", is fully compatible, ensuring an optimal and satisfying experience with our product.",
         Time = 5
       })
 
@@ -531,8 +531,8 @@ if executorName == "Solara" then
         coroutine.resume(AntiKick)
 else
     local Notify = Library:MakeNotify({
-        Title = "Friez Hub ",
-        Text = "Friez Hub  has determined that your executor, " .. executorName .. ", is fully compatible, ensuring an optimal and satisfying experience with our product.",
+        Title = "Light Hub ",
+        Text = "Light Hub  has determined that your executor, " .. executorName .. ", is fully compatible, ensuring an optimal and satisfying experience with our product.",
         Time = 5
       })
 
@@ -617,8 +617,8 @@ local Tab5 = Window:MakeTab({"| Tools", "rbxassetid://18170704671"})
 Window:SelectTab(Tab1)
 
 Tab1:AddDiscordInvite({
-    Name = "Friez Hub  Roblox",
-    Logo = "rbxassetid://18568712042",
+    Name = "Speed X",
+    Logo = "rbxassetid://18869569859",
     Invite = "https://discord.com/invite/zT5sWfmwTG"
 })
 
@@ -824,7 +824,7 @@ local function detectExploiters()
 
                 if humanoid.WalkSpeed > 40 then
                     local Notify = Library:MakeNotify({
-                        Title = "Friez Hub",
+                        Title = "Light Hub",
                         Text = player.Name .. " is using high speed (WalkSpeed: " .. humanoid.WalkSpeed .. ")!",
                         Time = 5
                     })
@@ -832,7 +832,7 @@ local function detectExploiters()
 
                 if humanoid.JumpPower > 100 then
                     local Notify = Library:MakeNotify({
-                        Title = "Friez Hub",
+                        Title = "Light Hub",
                         Text = player.Name .. " is using high jump (JumpPower: " .. humanoid.JumpPower .. ")!",
                         Time = 5
                     })
@@ -840,7 +840,7 @@ local function detectExploiters()
 
                 if rootPart and rootPart.Anchored then
                     local Notify = Library:MakeNotify({
-                        Title = "Friez Hub",
+                        Title = "Light Hub",
                         Text = player.Name .. " is using fly!",
                         Time = 5
                     })
@@ -851,7 +851,7 @@ local function detectExploiters()
                     local hit, position = workspace:FindPartOnRayWithIgnoreList(ray, {player.Character})
                     if not hit or (position - rootPart.Position).Magnitude > 10 then
                         local Notify = Library:MakeNotify({
-                            Title = "Friez Hub",
+                            Title = "Light Hub",
                             Text = player.Name .. " is using noclip!",
                             Time = 5
                         })
@@ -862,7 +862,7 @@ local function detectExploiters()
                     local speedMagnitude = (rootPart.Velocity * Vector3.new(1, 0, 1)).Magnitude
                     if speedMagnitude > 100 then
                         local Notify = Library:MakeNotify({
-                            Title = "Friez Hub",
+                            Title = "Light Hub",
                             Text = player.Name .. " is using speed glitch (Speed: " .. speedMagnitude .. ")!",
                             Time = 5
                         })
@@ -1335,8 +1335,8 @@ local Dropdown = Tab3:AddDropdown({
               })
         else
             local Notify = Library:MakeNotify({
-                Title = "Friez Hub",
-                Text = "Friez Hub cannot activate mode " .. currentOption .. " since you do not have Auto Parry [AI] mode activated.",
+                Title = "Light Hub",
+                Text = "Light Hub cannot activate mode " .. currentOption .. " since you do not have Auto Parry [AI] mode activated.",
                 Time = 5
               })
         end
@@ -1516,8 +1516,8 @@ local detectionCooldowns = {}
 
 local function createNotification(player, deviceType)
     local Notify = Library:MakeNotify({
-        Title = "Friez Hub",
-        Text = "Friez Hub detected a rapid click on " .. player.Name .. "'s " .. deviceType,
+        Title = "Light Hub",
+        Text = "Light Hub detected a rapid click on " .. player.Name .. "'s " .. deviceType,
         Time = 5
     })
 end
