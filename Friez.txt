@@ -599,9 +599,9 @@ redzlib.Themes.DarkRed = {
 }  
 
 local Window = redzlib:MakeWindow({
-    Title = "CRACKLED HUB BY FROSTLUA  | " .. gameName,
-    SubTitle = "by Belico2 and alexis.isback00",
-    SaveFolder = "CRACKLED HUB BY FROSTLUA "
+    Title = "Friez Hub  | " .. gameName,
+    SubTitle = "By Friez",
+    SaveFolder = "Friez Hub"
 })
 
 redzlib:SetTheme("DarkRed")
@@ -619,7 +619,7 @@ Window:SelectTab(Tab1)
 Tab1:AddDiscordInvite({
     Name = "Friez Hub  Roblox",
     Logo = "rbxassetid://18568712042",
-    Invite = "none"
+    Invite = "https://discord.com/invite/zT5sWfmwTG"
 })
 
 local Paragraph = Tab1:AddParagraph({"Join us discord for information about updates!", "​"})
@@ -824,7 +824,7 @@ local function detectExploiters()
 
                 if humanoid.WalkSpeed > 40 then
                     local Notify = Library:MakeNotify({
-                        Title = "CRACKLED HUB BY FROSTLUA ",
+                        Title = "Friez Hub",
                         Text = player.Name .. " is using high speed (WalkSpeed: " .. humanoid.WalkSpeed .. ")!",
                         Time = 5
                     })
@@ -832,7 +832,7 @@ local function detectExploiters()
 
                 if humanoid.JumpPower > 100 then
                     local Notify = Library:MakeNotify({
-                        Title = "CRACKLED HUB BY FROSTLUA ",
+                        Title = "Friez Hub",
                         Text = player.Name .. " is using high jump (JumpPower: " .. humanoid.JumpPower .. ")!",
                         Time = 5
                     })
@@ -851,7 +851,7 @@ local function detectExploiters()
                     local hit, position = workspace:FindPartOnRayWithIgnoreList(ray, {player.Character})
                     if not hit or (position - rootPart.Position).Magnitude > 10 then
                         local Notify = Library:MakeNotify({
-                            Title = "CRACKLED HUB BY FROSTLUA ",
+                            Title = "Friez Hub",
                             Text = player.Name .. " is using noclip!",
                             Time = 5
                         })
@@ -862,7 +862,7 @@ local function detectExploiters()
                     local speedMagnitude = (rootPart.Velocity * Vector3.new(1, 0, 1)).Magnitude
                     if speedMagnitude > 100 then
                         local Notify = Library:MakeNotify({
-                            Title = "CRACKLED HUB BY FROSTLUA ",
+                            Title = "Friez Hub",
                             Text = player.Name .. " is using speed glitch (Speed: " .. speedMagnitude .. ")!",
                             Time = 5
                         })
@@ -1325,18 +1325,18 @@ local Dropdown = Tab3:AddDropdown({
     Description = "Select a combat mode.",
     Options = {"Basic", "Basic High", "Medium", "Medium High", "Pro", "Pro High", "Extreme", "Extreme [AI]"},
     Default = "Extreme [AI]",
-    Flag = "CRACKLED HUB BY FROSTLUA ",
+    Flag = "Friez Hub",
     Callback = function(currentOption)
         if autoParryAIEnabled then
             local Notify = Library:MakeNotify({
-                Title = "CRACKLED HUB BY FROSTLUA ",
-                Text = "CRACKLED HUB BY FROSTLUA  has applied the mode " .. currentOption .. " automatically successfully.",
+                Title = "Friez Hub",
+                Text = "Friez Hub has applied the mode " .. currentOption .. " automatically successfully.",
                 Time = 5
               })
         else
             local Notify = Library:MakeNotify({
-                Title = "CRACKLED HUB BY FROSTLUA ",
-                Text = "CRACKLED HUB BY FROSTLUA  cannot activate mode " .. currentOption .. " since you do not have Auto Parry [AI] mode activated.",
+                Title = "Friez Hub",
+                Text = "Friez Hub cannot activate mode " .. currentOption .. " since you do not have Auto Parry [AI] mode activated.",
                 Time = 5
               })
         end
@@ -1516,8 +1516,8 @@ local detectionCooldowns = {}
 
 local function createNotification(player, deviceType)
     local Notify = Library:MakeNotify({
-        Title = "CRACKLED HUB BY FROSTLUA ",
-        Text = "CRACKLED HUB BY FROSTLUA  detected a rapid click on " .. player.Name .. "'s " .. deviceType,
+        Title = "Friez Hub",
+        Text = "Friez Hub detected a rapid click on " .. player.Name .. "'s " .. deviceType,
         Time = 5
     })
 end
@@ -2081,5 +2081,5 @@ Tab5:AddButton({
     end
 })
 
-setclipboard("https://discord.gg/d8Yp6qFmSH")
+setclipboard("https://discord.com/invite/zT5sWfmwTG")
 
