@@ -840,7 +840,7 @@ local function detectExploiters()
 
                 if rootPart and rootPart.Anchored then
                     local Notify = Library:MakeNotify({
-                        Title = "CRACKLED HUB BY FROSTLUA ",
+                        Title = "Friez Hub",
                         Text = player.Name .. " is using fly!",
                         Time = 5
                     })
